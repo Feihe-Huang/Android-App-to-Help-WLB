@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_balife"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_balife"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31"
+
+
+        tools:replace="android:icon"
+        >
+
+        <activity
+            android:name=".Note.ReadNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Note.AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Note.NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Entertainment.GameViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Entertainment.GameMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".InformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

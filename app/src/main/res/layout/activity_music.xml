@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_note"
+    >
+
+    <ImageView
+        android:id="@+id/DVDImage"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/dvd"
+        android:foreground="?attr/selectableItemBackground" />
+
+    <RelativeLayout
+        android:id="@+id/local_music_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#804C4C4B"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bg_music_small" />
+
+        <TextView
+            android:id="@+id/local_music_bottom_tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/local_music_bottom_iv_icon"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/local_music_bottom_tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local_music_bottom_tv_song"
+            android:layout_alignLeft="@id/local_music_bottom_tv_song"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_next" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_next"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_prev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_play"
+            android:src="@drawable/ic_prev" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/local_music_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/local_music_bottomlayout"
+        android:layout_below="@id/DVDImage" />
+
+
+</RelativeLayout>

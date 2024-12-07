@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#7C7A72</color>
+
+<!--    music-->
+    <color name="music_gray">#FF484848</color>
+
+
+
+    <!--    <color name="colorPrimary">#FFAF01</color>-->
+    <color name="colorPrimary">#0A84FF</color>
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+    <color name="colorPrimaryDark">#0A84FF</color>
+
+
+    <color name="gameColor">#fac401</color>
+    <color name="gameColor1">#fac401</color>
+
+
+
+    <!--    color of float Button-->
+    <color name="colorAccent">#0A84FF</color>
+<!--    <color name="colorPrimary">#0A25BF</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#0A25BF</color>-->
+
+
+    <color name="backgroundColor">#FFFFFF</color>
+
+<!--    渐变颜色-->
+
+        <color name="gradient1">#0ea9eb</color>
+        <color name="gradient2">#046DD6</color>
+<!--    <color name="gradient1">#fac401</color>-->
+<!--    <color name="gradient2">#ff8c00</color>-->
+
+<!--    文本颜色-->
+    <color name="textColor">#000000</color>
+    <color name="textGray">#373634</color>
+    <color name="textGray2">#4C4C4B</color>
+
+
+
+    <!--    inner color 修饰选项button-->
+    <color name="innerColor">#1291C6</color>
+    <color name="innerColor2">#0760BA</color>
+<!--    <color name="innerColor">#f2be00</color>-->
+<!--    <color name="innerColor2">#ed8709</color>-->
+
+
+
+</resources>

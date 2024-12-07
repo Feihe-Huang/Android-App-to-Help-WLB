@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".Homepage">
+
+    <LinearLayout
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_balife" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/logo"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Hey, HFH"
+                android:textColor="@color/textColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/hey"
+                android:layout_toRightOf="@+id/logo"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Start to balance your life !"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/study_work"
+            android:fontFamily="@font/lemonada_medium"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="2"
+            />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:id="@+id/todo_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        >
+
+        <LinearLayout
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/round_rect"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_todo1"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="TODO List \n\nSchedule All Your Tasks"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Finish all your tasks!"/>-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/right_arrow"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_marginRight="0dp"
+        android:id="@+id/focus_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/left_arrow"
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/round_rect1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Easy Note\n\nNote Everything Meaningful in Life"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:paddingTop="40dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ic_note"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Entertainment"
+            android:fontFamily="@font/lemonada_medium"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:id="@+id/game_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/round_rect2"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:paddingTop="40dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ic_game"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/textColor"
+                android:text="Games\n\nJust Have Fun"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ic_run"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/music_card"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/ic_music" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/round_rect3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Music\n\nRelax Yourself"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:paddingTop="40dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ic_music1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
